@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Phim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>🎬 Web Phim</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Tìm phim...">
+      <select id="filter">
+        <option value="all">Tất cả</option>
+        <option value="hanh-dong">Hành động</option>
+        <option value="tinh-cam">Tình cảm</option>
+        <option value="hai-huoc">Hài hước</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Grid phim -->
+  <div class="grid" id="movieGrid">
+    <!-- JS sẽ render phim vào đây -->
+  </div>
+
+  <!-- Modal xem phim -->
+  <div class="modal hidden" id="movieModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button class="close" id="closeModal">✖</button>
+      <div id="moviePlayer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

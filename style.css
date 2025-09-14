@@ -1,0 +1,16 @@
+body { font-family: system-ui, Arial; margin:0; background:#0f1720; color:#e6eef6; }
+.header { display:flex; justify-content:space-between; align-items:center; padding:1rem; max-width:1100px; margin:0 auto; }
+.controls input, .controls select { padding:.5rem; margin-left:.5rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; max-width:1100px; margin:1rem auto; padding:0 1rem; }
+.card { background:#111827; border-radius:8px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.6); }
+.card img { width:100%; height:320px; object-fit:cover; display:block; }
+.card .info { padding:.6rem; }
+.card h3 { margin:.2rem 0; font-size:1.05rem; }
+.card .meta { font-size:.85rem; color:#9aa6b2; margin-bottom:.6rem; }
+.card .play { background:#06b6d4; border:none; padding:.5rem .8rem; border-radius:6px; cursor:pointer; }
+
+.modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; z-index:1000; }
+.modal.hidden { display:none; }
+.modal-backdrop { position:absolute; inset:0; background:rgba(0,0,0,0.7); }
+.modal-dialog { position:relative; z-index:2; width:90%; max-width:900px; background:#0b1220; padding:1rem; border-radius:10px; box-shadow:0 12px 40px rgba(0,0,0,0.7); color:#e6eef6; }
+.close { position:absolute; right:12px; top:8px; background:transparent; color:#fff; border:none; font-size:1.1rem; cursor:pointer; }
